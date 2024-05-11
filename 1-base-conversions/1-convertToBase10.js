@@ -3,7 +3,9 @@
 /******************************************************************************/
 
 const convertToBase10 = str => {
-  // Your code here 
+  if (str.substring(0, 2) === '0b') {
+    return parseInt(str.substring(2), 2)
+  } else return parseInt(str)
 };
 
 /******************************************************************************/
